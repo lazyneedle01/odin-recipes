@@ -1,0 +1,78 @@
+*, 
+*::before
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: aliceblue;
+    padding: 2rem;
+    border-radius: 5px;
+    width: 60%;
+}
+
+h1 {
+    margin: 0 0 30px;
+    text-align: center;
+    letter-spacing: 4px;
+}
+
+/* per recipe style */
+.container img {
+    display: block;
+    height: 400px;
+    border-radius: 3px;
+    margin: 0 auto;
+}
+
+.container img + hr {
+    margin-top: 20px;
+}
+
+.directions ul {
+    list-style: none;
+    padding-left: 24px;
+}
+
+.directions ul li {
+    margin-bottom: 20px;
+}
+
+.directions ul li h4 {
+    margin: 0;
+}
+
+.directions ul li p {
+    margin-bottom: 0;
+}
+
+/* end */
+
+.recipes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.recipes a {
+    display: inline-block;
+    /* margin: 0 20px 0; */
+    text-decoration: none;
+    border: 2px solid #333;
+    padding: 0.5rem;
+    border-radius: 3px;
+    color: aliceblue;
+    background-color: #333;
+}
+
+.recipes a:hover {
+    cursor: pointer;
+}
